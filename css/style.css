@@ -108,6 +108,7 @@ iframe {
     margin: 10px;
     text-decoration: none;
     color: white;
+    transition: 0.5s;
 }
 
 .texto_footer {
