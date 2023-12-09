@@ -1,0 +1,14 @@
+/*Formato Itinerario*/
+.paragraph1-itinerario-container {
+    @extend .paragraph1-tiempydist-container;
+
+    .paragraph1-itinerario {
+        background-color: rgb(200, 253, 253);
+        border: 2px solid grey;
+        border-radius: 5px;
+        padding: 10px;
+        width: 75%;
+        height: 80%;
+
+    }
+}

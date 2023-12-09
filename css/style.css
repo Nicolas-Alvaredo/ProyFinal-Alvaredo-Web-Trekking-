@@ -19,15 +19,6 @@
 
 /*Variable fonts*/
 /*Mixin Sizes*/
-/*Formato header Boostrap nav bar*/
-.navbar {
-  background-color: grey;
-  border-bottom: 2px solid rgb(21, 3, 83);
-}
-.navbar .navbar-toggler {
-  background-color: white !important;
-}
-
 /*Animacion nav bar links*/
 @keyframes efecto_link {
   from {
@@ -61,6 +52,40 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-duration: 0.5s;
+}
+
+/*Formato header Boostrap nav bar*/
+.navbar {
+  background-color: grey;
+  border-bottom: 2px solid rgb(21, 3, 83);
+}
+.navbar .navbar-toggler {
+  background-color: white !important;
+}
+
+/*Formato pie de pagina*/
+.pie-container {
+  padding: 5px;
+  list-style-type: square;
+  background-color: grey;
+  /*Flex box*/
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-top: 2px solid rgb(21, 3, 83);
+  /*Pseudoclases pie de pagina*/
+}
+.pie-container .links_externos a {
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+.pie-container .texto_footer {
+  color: white;
+}
+.pie-container a:hover {
+  color: blue;
 }
 
 /*Formato titulo Index */
@@ -128,31 +153,6 @@
 .video_intro iframe {
   align-items: center;
   flex-wrap: wrap;
-}
-
-/*Formato pie de pagina*/
-.pie-container {
-  padding: 5px;
-  list-style-type: square;
-  background-color: grey;
-  /*Flex box*/
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  border-top: 2px solid rgb(21, 3, 83);
-  /*Pseudoclases pie de pagina*/
-}
-.pie-container .links_externos a {
-  margin: 10px;
-  text-decoration: none;
-  color: white;
-  transition: 0.5s;
-}
-.pie-container .texto_footer {
-  color: white;
-}
-.pie-container a:hover {
-  color: blue;
 }
 
 /*Formato text Tiempos y distancias*/

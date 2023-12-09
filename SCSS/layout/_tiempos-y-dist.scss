@@ -1,0 +1,33 @@
+/*Formato text Tiempos y distancias*/
+.paragraph1-tiempydist-container {
+    margin: 10px;
+    /*Flexbox*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+
+    .paragraph1-tiempydist {
+        background-color: rgb(200, 253, 253);
+        border: 2px solid grey;
+        border-radius: 5px;
+        padding: 10px;
+        width: 75%;
+        height: 80%;
+
+    }
+}
+
+/*Formato imagen Tiempos y distancias*/
+.Imagen-tiempydist {
+    margin-bottom: 20px;
+    /*Flexbox*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+
+    img {
+        @include sizes(75% , 80%);
+    }
+}

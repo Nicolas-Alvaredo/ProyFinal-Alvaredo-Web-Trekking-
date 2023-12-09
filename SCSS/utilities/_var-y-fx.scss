@@ -1,0 +1,43 @@
+/*Mixin Sizes*/
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+/*Animacion nav bar links*/
+@keyframes efecto_link {
+    from {
+        color: white;
+    }
+    to {
+        color: yellow;
+    }
+}
+
+.container-fluid a {
+
+    animation-name: efecto_link;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+/*Animacion nav bar image link inicio*/
+@keyframes move-x {
+    0% {
+        transform: translateX(0px) translateY(0px);
+    }
+    50% {
+        transform: translateX(2px) translateY(2px);
+    }
+    100% {
+        transform: translateX(-2px) translateY(-2px);
+    }
+}
+
+.navbar-brand:hover {
+    animation-name: move-x;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+}

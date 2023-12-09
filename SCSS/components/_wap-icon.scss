@@ -1,0 +1,10 @@
+/*Formato Wap icon Contacto*/
+.wap {
+    position: fixed;
+    right: 20px;
+    bottom: 60px;
+    transition: 0.5s;
+    &:hover {
+        transform: rotate(720deg);
+    }
+}

@@ -1,0 +1,41 @@
+/*Formato Contacto*/
+.Intro-contacto-container {
+    margin: 5px;
+    /*Flexbox*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+    .Intro-contacto {
+        background-color: rgb(200, 253, 253);
+        border: 2px solid grey;
+        border-radius: 5px;
+        padding: 10px;
+        width: 75%;
+        height: 80%;
+    }
+
+}
+
+/*Formato Formulario Contacto*/
+.formulario-contacto-container {
+    @extend .Intro-contacto-container;
+
+    .formulario {
+        background-color: rgb(200, 253, 253);
+        border: 2px solid grey;
+        border-radius: 5px;
+        padding: 10px;
+        width: 75%;
+        height: 80%;
+    }
+    .button {
+        background-color: white;
+        transition: 0.3s;
+        &:hover {
+            background-color: yellow;
+        }
+    }
+
+}

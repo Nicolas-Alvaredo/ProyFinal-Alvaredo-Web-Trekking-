@@ -1,0 +1,28 @@
+/*Formato pie de pagina*/
+.pie-container {
+    padding: 5px;
+    list-style-type: square;
+    background-color: grey;
+    /*Flex box*/
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-top: 2px solid rgb(21, 3, 83);
+
+    .links_externos a {
+        margin: 10px;
+        text-decoration: none;
+        color: white;
+        transition: 0.5s;
+    }
+
+    .texto_footer {
+        color: white;
+    }
+
+    /*Pseudoclases pie de pagina*/
+    & a:hover {
+        color: blue;
+    }
+
+}
