@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Media Query*/
 /*Variable Media Query*/
 @media (min-width: 0px) and (max-width: 768px) {
@@ -18,6 +19,19 @@
 }
 
 /*Variable fonts*/
+/*Grid general para mantener siempre el footer al pie de la pagina*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh; /* Asegura que el contenedor ocupe al menos el 100% de la altura de la pantalla */
+}
+
 /*Mixin Sizes*/
 /*Animacion nav bar links*/
 @keyframes efecto_link {
@@ -54,13 +68,25 @@
   animation-duration: 0.5s;
 }
 
-/*Formato header Boostrap nav bar*/
 .navbar {
   background-color: grey;
   border-bottom: 2px solid rgb(21, 3, 83);
 }
 .navbar .navbar-toggler {
   background-color: white !important;
+}
+.navbar .navbar-collapse {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+.navbar .navbar-nav {
+  display: flex;
+  justify-content: space-between; /* Espacia los elementos a lo largo del contenedor */
+  flex-grow: 1; /* Permite que la lista ocupe el espacio disponible */
+  max-width: 1200px; /* Puedes ajustar este valor según el tamaño de la navbar */
+}
+.navbar .nav-link {
+  text-align: center; /* Centra el texto dentro de cada enlace */
 }
 
 /*Formato pie de pagina*/
